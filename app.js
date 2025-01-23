@@ -66,17 +66,17 @@ app.get("/api/:id", async (req, res) => {
   }
 });
 
-// to retrive from the all data in database
+//to retrive from the all data in database
 
-app.get("/api", async (req, res) => {
-  const data = await expenseModel.find({});
-  if (data) {
-    console.log(data);
-    res.json(data);
-  }
-});
+// app.get("/api", async (req, res) => {
+//   const data = await expenseModel.find({});
+//   if (data) {
+//     console.log(data);
+//     res.json(data);
+//   }
+// });
 
-// to retrive the data based on the title
+// // to retrive the data based on the title
 
 app.get("/ap", async (req, res) => {
   const { title } = req.body;
